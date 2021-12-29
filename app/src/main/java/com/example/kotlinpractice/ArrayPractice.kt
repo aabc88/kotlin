@@ -1,5 +1,6 @@
 package com.example.kotlinpractice
 
+// 배열
 fun main() {
     // 배열의 타입은 제네릭으로 표현함
     // Int형 배열의 크기는3이며 0으로 초기화한 데이터를 3개 나열한 정수형 배열
@@ -25,8 +26,16 @@ fun main() {
     // List : 순서가 있는 데이터 집합으로 데이터의 중복 하용
     // Set : 순서가 없으며 중복 불허용
     // Map : 키와 값으로 이루어진 데이터 집함으로 순서가 없고 키의 중복은 불허용
+    // mutable - 가변
+    val list = listOf<Int>(10, 20, 30)
+    for (i in list.indices)
+        println("list[$i] = " + list[i])
 
-
-
+    val list2 = mutableListOf<Int>(10, 20, 30)
+    list2.add(3, 40)
+    list2[0] = 50
+    for (i in list2.indices)
+        println("mutableList[$i] = " + list2[i])
+    val map = mapOf("asd" to 1, "asdf" to 2)
 
 }

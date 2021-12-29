@@ -1,5 +1,7 @@
 package com.example.kotlinpractice
 
+// 변수 함수
+
 // val = value 초기값이 할당되면 바꿀 수없는 변수
 // var = variable 초기값이 할당된 후 바꿀 수 있는 변수
 val data1 = 1
